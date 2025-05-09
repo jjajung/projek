@@ -128,7 +128,7 @@
 
         .about {
             padding: 5rem 2rem;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            background: linear-gradient(135deg, #96b2db 0%, #8c9fc4 100%);
             position: relative;
             overflow: hidden;
         }
@@ -194,7 +194,7 @@
         .about-text {
             flex: 1 1 400px;
             padding: 1.5rem;
-            background: white;
+            background: rgb(155, 206, 226);
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
@@ -202,7 +202,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            margin-left: 270px;
+            margin-left: 490px;
             color: #3498db;
             position: relative;
             display: inline-block;
@@ -213,9 +213,9 @@
             position: absolute;
             bottom: -5px;
             left: 0;
-            width: 50%;
+            width: 100%;
             height: 3px;
-            background: #9b59b6;
+            background: #835c92;
         }
 
         .about-text p {
@@ -227,13 +227,14 @@
         .btn {
             display: inline-block;
             padding: 0.8rem 1.8rem;
-            background: linear-gradient(45deg, #3498db, #9b59b6);
+            background: linear-gradient(45deg, #5895a8, #478fac);
             color: white;
-            border-radius: 50px;
+            border-radius: 30px;
             text-decoration: none;
+            font-size: 20px;
             font-weight: 600;
             margin-top: 1rem;
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -242,7 +243,7 @@
         /* product Section */
          .product {
             padding: 100px 50px;
-            background-color: #fff;
+            background-color: #a9a8c5;
         }
         
         .product-grid {
@@ -264,7 +265,7 @@
             transform: translateY(-10px);
         }
 
-              .product-image {
+        .product-image {
             height: auto;
             overflow: hidden;
         }
@@ -383,27 +384,28 @@
         
         /* Footer */
         footer {
-            background-color: #333;
-            color: #fff;
+            background: #2E2E2E;
+            color: white;
             text-align: center;
-            padding: 30px;
+            padding: 30px 0;
+            margin-top: 50px;
         }
-        
+
         .social-links {
             margin-bottom: 20px;
         }
-        
+
         .social-links a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 20px;
-            transition: color 0.3s;
+            color: white;
+            font-size: 24px;
+            margin: 0 15px;
+            transition: all 0.3s ease;
         }
-        
+
         .social-links a:hover {
-            color: #0077b6;
+            color: #FF6B6B;
+            transform: translateY(-3px);
         }
-        
         /* Responsive Styles */
         @media (max-width: 768px) {
             nav {
