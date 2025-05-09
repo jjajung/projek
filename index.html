@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Ceo of Gebyar Noodles🍜</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#product">Best Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Khusnuzzahroh</h1>
+                <p>I'm a passionate web developer with expertise in creating beautiful, functional, and user-friendly websites. I love turning ideas into reality through code.</p>
+                <a href="#product" class="btn">View Our Best Menu</a>
+            </div>
+            <div class="hero-image">
+                <img src="izza.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Who I Am</h3>
+                <p>I'm a professional web developer with over 5 years of experience in building websites and web applications. My journey in tech started when I was in college and I've been passionate about coding ever since.</p>
+                <p>I specialize in front-end development with a focus on creating responsive, accessible, and performant websites. I'm constantly learning new technologies and techniques to stay at the forefront of web development.</p>
+                <p>When I'm not coding, you can find me hiking, reading, or experimenting with new recipes in the kitchen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- product Section -->
+    <section id="product" class="product">
+        <h2 class="section-title">Our Best Menu</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="mie.jpg" alt="product 1">
+                </div>
+                <div class="product-info">
+                    <h3>Mie Ayam</h3>
+                    <p>A fully responsive online store with shopping cart and payment integration.</p>
+                    <a href="#" class="btn">View product</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="mie1.jpg" alt="product 2">
+                </div>
+                <div class="product-info">
+                    <h3>Bakmie Ayam</h3>
+                    <p>A dynamic blog platform for travel enthusiasts with photo galleries.</p>
+                    <a href="#" class="btn">View product</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="udang.jpg" alt="product 3">
+                </div>
+                <div class="product-info">
+                    <h3>Udang Keju</h3>
+                    <p>A mobile application for tracking workouts and nutrition plans.</p>
+                    <a href="#" class="btn">View product</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="dimsum.jpg" alt="product 4">
+                </div>
+                <div class="product-info">
+                    <h3>Dimsum</h3>
+                    <p>A productivity application for teams to collaborate on product.</p>
+                    <a href="#" class="btn">View product</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Talk About Our Menues</h3>
+                <p>Your satisfaction is our top priority, and we would greatly appreciate it if you could share any feedback or suggestions regarding your recent menu purchases.
+                    Whether it’s about taste, portion size, presentation, or any other aspect of your dining experience, your input helps us grow and serve you better.</p>
+                <p>We are always striving to improve, and your honest opinions play a crucial role in shaping our menu and service enhancements. 
+                    Thank you for taking the time to share your thoughts—we look forward to making positive changes based on your valuable feedback!</p>
+                <div class="contact-details">
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Street, City, Country</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>ezabriell@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>+6285654372489</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="button" onclick="sendToWhatsApp()" class="btn">
+                        <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+            
+            <script>
+                function sendToWhatsApp() {
+                    const name = document.getElementById('name').value;
+                    const message = document.getElementById('message').value;
+                    const formattedText = `Halo, my name is *${encodeURIComponent(name)}* %0A${encodeURIComponent(message)}`;
+                    
+                    window.open(`https://wa.me/6285607706476?text=${formattedText}`, '_blank');
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <!-- Instagram -->
+            <a href="https://instagram.com/jjajungg" target="_blank"><i class="fab fa-instagram"></i></a>
+            
+            <!-- Twitter/X -->
+            <a href="https://x.com/rikinasgor" target="_blank"><i class="fab fa-twitter"></i></a>
+            
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/khusnuzzahroh-" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/jjajungg" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2023 Khusnuzzahroh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
